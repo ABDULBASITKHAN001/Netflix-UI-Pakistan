@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Pakistan - Watch TV Shows</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: white;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: #000;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .navbar .logo img {
+      height: 50px;
+    }
+
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    .navbar .menu a:hover {
+      color: #e50914;
+    }
+
+    /* Hero section */
+    .hero {
+      background-image: url("images/netflix.jpeg");
+       background-size:cover;
+       background-position: center; 
+      height: 69vh;
+      color: white;
+      text-align: center;
+       padding-top: 150px; 
+       font-weight: bolder; 
+       opacity: 0.4;   
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .hero .cta-buttons a {
+      padding: 15px 30px;
+      font-size: 16px;
+      background-color: #e50914;
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+      transition: background-color 0.3s;
+    }
+
+    .hero .cta-buttons a:hover {
+      background-color: #f40612;
+    }
+
+    /* Movie row styling */
+    .movie-row {
+      margin: 80px 30px;
+       /* padding-left: 100px;  */
+    }
+
+    .movie-row h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .movie-row .movies {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+
+    .movie-row .movies img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    .movie-row .movies img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 40px 30px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: #e50914;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Netflix Logo">
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">New & Popular</a>
+      <a href="#">My List</a>
+      <a href="#">Browse</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+ 
+  <section class="hero">
+    <div class="name"><h1>Unlimited movies,<br> TV shows, and more</h1>
+        <h3>Starts at Rs 250. Cancel anytime.</h3> </div>  
+    <div class="cta-buttons">
+      <a href="#">Play</a>
+      <a href="#">More Info</a>
+    </div>
+    
+  </section>
+
+  <!-- Movie Section -->
+  <section class="movie-row">
+    <h2>Trending Now</h2>
+    <div class="movies">
+      <img src="images\Shahrukh’s ‘Pathan’ sets another record.jpeg" alt="Movie 1">
+      <img src="images\download.jpeg" alt="Movie 2">
+      <img src="images\Sonu Sood Fateh.jpeg" alt="Movie 3">
+      <img src="images/Lucky Baskhar Poster.jpeg" alt="Movie 4">
+      <img src="images/Movie poster.jpeg" alt="Movie 5">
+      <img src="images/Tiger Nageswara Rao (2023) Action_Thriller.jpeg" alt="Movie 5">
+      <img src="images/Jailer Movie Fan-Made Poster, Photoshop Manipulation, Rajnikanth.jpeg" alt="Movie 5">
+    </div>
+  </section>
+
+  <section class="movie-row">
+    <h2>Popular on Netflix</h2>
+    <div class="movies">
+      <img src="images/Sekawan Limo 1.jpeg" alt="Movie 1">
+      <img src="images/bed467ca-343b-42c8-913e-bc837b4eb7c1 2.jpeg" alt="Movie 2">
+      <img src="images/fda5f463-4e94-4a7b-9b0b-12986e8882fd 3.jpeg" alt="Movie 3">
+      <img src="images/stree 2 4.jpeg" alt="Movie 4">
+      <img src="images/GOAT movie poster reimagined 5.jpeg" alt="Movie 5">
+      <img src="images/The Last Book movie poster design_ 6.jpeg" alt="Movie 4">
+      <img src="images/mahaan.jpeg" alt="Movie 4">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Netflix Pakistan &copy; 2025</p>
+    <p><a href="#">Terms of Use</a> | <a href="#">Privacy</a> | <a href="#">Cookie Preferences</a></p>
+  </footer>
+
+</body>
+</html>
